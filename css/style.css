@@ -1,0 +1,467 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1300px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin: auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    background-color: #fff;
+    align-items: center;   
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 80%;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+.logo-title{
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 1rem;
+
+}
+.logo{
+    display: flex;
+    flex-basis: 20%;
+}
+.logo span{
+    color: #4232c2;
+}
+.logo img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgba(0,0,0,.55);
+    margin: 1rem;
+    padding: 0.75rem 1rem;
+
+}
+nav ul li a:hover{
+    background-color: #4232c2;
+    border-radius: 50rem;
+    color: #fff;
+}
+#iconmenu{
+    font-size: 1.5rem;
+    color: rgba(0,0,0,.55);
+    cursor: pointer;
+    display: none;
+}
+.icon{
+    display: flex;
+}
+.icon i{
+    display: inline-block;
+    margin-right: 2rem;
+    color: #4232c2;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.bell:hover{
+    transform: rotate(20deg);
+}
+#iconmenu{
+    outline: 1px solid rgba(0,0,0,.55);
+}
+/* -----------------------Start styles------------------------ */
+.start{
+    background-image: url(../img/banner-bg-01.jpg);
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.start{
+    overflow: hidden;
+}
+.desc{
+    margin: 200px auto; 
+    width: 60%;
+}
+.title{
+    color: #6266ea;
+    font-size: 3.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+.para{
+    color: rgba(0,0,0,.55);
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+}
+.desc a{
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+    color: #6266ea;
+    border: 1px solid #4232c2;
+    border-radius: 50rem;
+}
+.desc a:hover{
+    background-color: #4232c2;
+    color: #fff;
+}
+/* ------------------ sucess ----------------------- */
+.services{
+    padding-top:5rem;
+}
+.services h2{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.success{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+
+}
+
+.success h5{
+    font-size: 1.75rem;
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+
+}
+.success h5::after{
+    content: "";
+    width: 9.5rem;
+    height: 5px;
+    background-color: #6266ea;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.success i{
+    font-size: 1.5rem;
+}
+
+.success p{
+    color: rgba(0,0,0,.55);
+    font-size: 1rem;
+    margin-left: 2.75rem;
+    line-height: 1.5;
+}
+/* ------------------ links ----------------------- */
+.links{
+    background-color: #6266ea;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+.links ul li{
+    display: inline-block;
+    margin: 0 2rem;
+}
+.links ul li a{
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    color: #fff;
+}
+.links ul li a:hover{
+    background-color: #4232c2;
+    border-radius: 50rem;
+}
+.active{
+    background-color: #4232c2;
+    border-radius: 50rem;
+}
+.links-container{
+    width: 50%;
+    margin: auto;
+}
+/* ------------------ Design ----------------------- */
+.parent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2.5rem 0;
+}
+.card{
+    flex-basis: 23%;
+    height: 300px;
+    background-size: cover;
+    position: relative;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    min-width: 250px;
+    cursor: pointer;
+}
+ .lyr{
+    height: 0%;
+    width: 100%;
+    background-color: rgba(255,255,255,0.4);
+}
+.card:hover .lyr{
+    height: 100%;
+}
+.card:hover .card-desc h3{
+    border: 1px solid black;
+}
+.card-desc{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    line-height: 1.5;
+}
+.card-desc h3{
+    border: 1px solid #fff;
+    border-radius: 50rem;
+    padding: 0.5rem 0.75rem;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    color: black;
+}
+.card-desc p{
+    color: rgba(0,0,0,.55);
+}
+/* ------------------ transformation ----------------------- */
+.full{
+    background-color: #6266ea;
+    padding: 3rem 0;
+}
+.transformation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 300px;
+}
+.box i{
+    color: #fff;
+}
+
+.box i{
+    font-size: 5rem;
+}
+.information h5{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+.information p{
+    color: rgba(255, 255, 255, 0.705);
+    font-size: 1rem;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+    padding:1rem 1.25rem;
+    background-color: #4232c2;
+    border-radius: 50rem;
+}
+.btn a:hover{
+    background-color: blue;
+}
+/* ------------------ recent works ----------------------- */
+.recent-works h2{
+    text-align: center;
+    padding: 100px 0;
+    font-size: 2rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col-3{
+    flex-basis: 30%;
+    height: 400px;
+    position: relative;
+    border-radius: 0.5rem;
+    background-size: cover;
+    transition: all 1s;
+    margin-bottom: 2rem;
+    min-width: 300px;
+}
+.col-3:hover .layer{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 33.333%, rgba(97,84,199,1) 66.666%, rgba(255,255,255,0) 99.999%);
+}
+.col-3:hover .large{
+    color: #212529;
+}
+.text{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.large{
+    font-size: 30px;
+    color:black;
+}
+.small{
+    font-size: 15px;
+}
+.text p{
+    margin: 10px;
+}
+/* -----------------------  love ---------------------- */
+.love{
+    border: 2px solid #ffb6c1;
+    border-radius: 1rem;
+    padding: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: fit-content; */
+    border-left: 10px solid #fd6c6c;
+    text-align: center;
+    min-height: 200px;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.love h2{
+    margin:50px 0 ;
+    font-size: 3rem;
+    color: royalblue;
+    letter-spacing: 1.5;
+}
+/* -----------------------  Footer ---------------------- */
+footer{
+    background-color: #4232c2;
+    padding: 50px 0;
+    color: #fff;
+}
+footer h2{
+    cursor: pointer;
+}
+footer h2:hover{
+    color: aqua;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* ------------------ media query ----------------------- */
+@media (max-width:1150px){
+    .start .title{
+        font-size: 2.25rem;
+    }
+    .para{
+        line-height: 1.5;
+    }
+    .desc{
+        width: 80%;
+        text-align: start;
+        margin-top: 3rem;
+    }
+
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav{
+        /* overflow: hidden; */
+        opacity: 0;
+    }
+    nav ul li{
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .icon{
+        justify-content: space-around;
+        opacity: 0;
+    }
+    .icon i{
+        margin: 0px 100px;
+    }
+    #iconmenu{
+        display: block;
+    }
+    .success{
+        width: 100%;
+        text-align: start;
+    }
+    .success h5{
+        margin-left: 0;
+        display: inline-block;
+    }
+    .links-container{
+        width: 100%;
+    }
+    .links-container li a{
+        display: inline-block;
+        margin:0;
+    }
+    .success i{
+        margin-left: 0;
+    }
+    .love{
+        width: 100%;
+    }
+    }
+    @media(max-width:500px){
+        .icon i{
+            margin: 0px 20px;
+        }
+    }
+   @media(max-width:600px){
+       .card{
+           flex-basis: 100%;
+       }
+   }
+   @media(max-width:700px){
+    .transformation{
+           text-align: center;
+       }
+       .information h5{
+           font-size: 1.25rem;
+       }
+       .col-3{
+           flex-basis: 100%;
+       }
+       .row{
+           text-align: center;
+       }
+    
+   }
+   @media (max-width:800px){
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer h2{
+        margin-top: 2rem;
+    }
+   }
